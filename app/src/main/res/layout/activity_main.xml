@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <TextView
+    android:id="@+id/txtvHttpLink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter a http link to open:" />
+
+    <EditText
+    android:id="@+id/httpLinkInp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter link" />
+
+    <Button
+    android:id="@+id/btnShwWebPage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="openWebSite"
+    android:text="Show Website" />
+
+        </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/linearLayout3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <TextView
+    android:id="@+id/txtvPhoneNum"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter a phone number to call | sendSMS:" />
+
+    <EditText
+    android:id="@+id/phoneNumInp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter phone number" />
+
+    <Button
+    android:id="@+id/btnSMS"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="sendSMS"
+    android:text="sendSMS" />
+
+    <Button
+    android:id="@+id/btnCall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="call"
+    android:text="Call" />
+
+    <Button
+    android:id="@+id/btnShwContact"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="showContactList"
+    android:text="View Contacts" />
+        </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <TextView
+    android:id="@+id/txtvTxtSrch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Google the text entered:"
+    android:textAlignment="center" />
+
+    <EditText
+    android:id="@+id/srchInp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter word to search" />
+
+    <Button
+    android:id="@+id/btnTxtSearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="srchTxt"
+    android:text="Web Search" />
+
+    <Button
+    android:id="@+id/btnNavigate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="showLoc"
+    android:text="Driving Directions" />
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
