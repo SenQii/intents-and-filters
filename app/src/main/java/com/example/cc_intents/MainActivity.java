@@ -142,7 +142,6 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/search?q=" + Uri.encode(input)));
         startActivity(i);
 
-
 //        any apps to handle
         startActivity(Intent.createChooser(i, "Choose a browser"));
 
@@ -154,8 +153,6 @@ public class MainActivity extends AppCompatActivity {
         String endLocation = "Al Matar Street, Ar-Rass, Qassim";
 
         Uri GMIntentUri = Uri.parse("https://maps.google.com/maps/dir/?api=1&origin=" + Uri.encode(endLocation) + "&destination=" + Uri.encode(startLocation));
-//        resault uri : https://www.google.com/maps/dir/King+Khalid+Street,+Ar-Rass,+Qassim/Al+Matar+Street,+Ar-Rass,+Qassim
-//        resault uri : https://www.google.com/maps/dir/?api=1&origin=King+Khalid+Street,+Ar-Rass,+Qassim&destination=Al+Matar+Street,+Ar-Rass,+Qassim
         Intent mapI = new Intent(Intent.ACTION_VIEW, GMIntentUri);
 
           startActivity(Intent.createChooser(mapI, "Choose a map app"));
